@@ -1,16 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFS", "TFS.csproj", "{035CF878-0AE5-4249-A9DA-A9DF2EFE2B4D}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Common", "Shared\Common.shproj", "{6EF619F3-9490-4F74-B8FF-32C7856201FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtterExtension", "OtterExtension\OtterExtension.csproj", "{C364F102-C053-43D0-A726-FDA59A4017F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMasterExtension", "BuildMasterExtension\BuildMasterExtension.csproj", "{035CF878-0AE5-4249-A9DA-A9DF2EFE2B4D}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\Shared.projitems*{035cf878-0ae5-4249-a9da-a9df2efe2b4d}*SharedItemsImports = 4
+		Shared\Shared.projitems*{6ef619f3-9490-4f74-b8ff-32c7856201fb}*SharedItemsImports = 13
+		Shared\Shared.projitems*{c364f102-c053-43d0-a726-fda59a4017f6}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C364F102-C053-43D0-A726-FDA59A4017F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C364F102-C053-43D0-A726-FDA59A4017F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C364F102-C053-43D0-A726-FDA59A4017F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C364F102-C053-43D0-A726-FDA59A4017F6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{035CF878-0AE5-4249-A9DA-A9DF2EFE2B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{035CF878-0AE5-4249-A9DA-A9DF2EFE2B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{035CF878-0AE5-4249-A9DA-A9DF2EFE2B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU

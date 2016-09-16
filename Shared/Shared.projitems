@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6ef619f3-9490-4f74-b8ff-32c7856201fb</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Credentials\TfsCredentials.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IVsoConnectionInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Operations\QueueVsoBuildOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Operations\TfsOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\AssemblyInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TfsBuildInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualStudioOnline\Model\Common.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualStudioOnline\Model\GetBuildArtifactsResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualStudioOnline\Model\GetBuildDefinitionResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualStudioOnline\Model\GetBuildDefinitionsResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualStudioOnline\Model\GetBuildResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualStudioOnline\Model\GetBuildsResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualStudioOnline\TfsRestApi.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)TfsIssueTrackingApplicationFilterEditor.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
